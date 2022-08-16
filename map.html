@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<nav>
+  <nav>
     <div class="nav-wrapper">
-      <a href="./homepage.html" class="brand-logo"><i class="material-icons">Night Hike</i><i class="fa-solid fa-bugs"></i></a>
+      <a href="./homepage.html" class="brand-logo"
+        ><i class="material-icons">Night Hike</i><i class="fa-solid fa-bugs"></i
+      ></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html"><i class="material-icons">Search</i></a></li>
-        <li><a href="./map.html"><i class="material-icons">Maps</i></a></li>
-        <li><a href="./constellations.html"><i class="material-icons">Constellations</i></a></li>
-        <li><a href="mobile.html"><i class="material-icons">Weather</i></a></li>
+        <li>
+        <i class="material-icons">
+          <form>
+            <input
+              id="city"
+              type="text"
+              placeholder="Search for a city..."
+              aria-label="Search"
+            />
+            <button id="btnGetWeather" type="button">Search</button>
+          </form>
+        </i></a>
+        </li>
+        <li>
+          <a href="./map.html"><i class="material-icons">Maps</i></a>
+        </li>
+        <li>
+          <a href="./constellations.html"
+            ><i class="material-icons">Constellations</i></a
+          >
+        </li>
+        <li>
+          <a href="mobile.html"><i class="material-icons">Weather</i></a>
+        </li>
       </ul>
     </div>
   </nav>
 
   <div class="container mainContainer">
     <div class="row">
-      <aside class="col s3"> <!--holds the weather on the left side-->
+      <aside class="col s3">
+        <!--holds the weather on the left side-->
         test
       </aside>
-      <div class="col s9"> <!--holds the map on the right side-->
+      <div class="col s9">
+        <!--holds the map on the right side-->
         test
       </div>
     </div>
   </div>
 
-
-
-<body>
-    
-
-  <script src="https://kit.fontawesome.com/73f5b40986.js" crossorigin="anonymous"></script>
-</body>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/73f5b40986.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/weather.js"></script>
+  </body>
 </html>
