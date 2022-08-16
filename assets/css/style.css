@@ -1,3 +1,16 @@
+:root {
+     --lightfont:rgb(238, 238, 238); 
+}
+
+nav {
+    background-color: #11153a; 
+}
+
 body {
-    background-color: rgb(231, 238, 238);
+    height: 100vh;
+    background: linear-gradient(to bottom, #1c0f4c, #18174d, #161d4e, #16224d, #18274c, #2e2a4b, #3d2f4a, #483449, #593e47, #614b48, #655951, #69665f);;
+}
+
+h1 {
+    color: var(--lightfont)
 }
