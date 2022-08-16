@@ -1,5 +1,5 @@
 :root {
-     --lightfont:rgb(238, 238, 238); 
+     --lightfont:rgb(202, 200, 200); 
 }
 
 nav {
@@ -14,3 +14,18 @@ body {
 h1 {
     color: var(--lightfont)
 }
+
+.today {
+    color:  var(--lightfont);
+    font-size:12px;
+}
+
+.weatherSearch {
+    color: var(--lightfont);
+}
+
+.current-city {
+    color: var(--lightfont);
+    font-size:12px;
+}
+

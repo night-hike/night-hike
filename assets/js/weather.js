@@ -45,7 +45,7 @@ document.getElementById("btnGetWeather").addEventListener("click", function () {
   function displayWeather(resp) {
     console.log(resp);
     console.log(city);
-    var todaysWeather = document.querySelector(".s3");
+    var todaysWeather = document.querySelector(".today");
     var todaysDate = new Date(resp.current.dt * 1000);
     todaysWeather.innerHTML = `<div class="current-city">
     Current Weather in ${city}  <br />
