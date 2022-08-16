@@ -1,5 +1,5 @@
 :root {
-     --lightfont:rgb(202, 200, 200); 
+     --lightfont:rgb(238, 238, 238); 
 }
 
 nav {
@@ -15,6 +15,7 @@ h1 {
     color: var(--lightfont)
 }
 
+<<<<<<< Updated upstream
 .today {
     color:  var(--lightfont);
     font-size:12px;
@@ -27,5 +28,21 @@ h1 {
 .current-city {
     color: var(--lightfont);
     font-size:12px;
+}
+
+.row {
+    margin: 10px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    color: var(--lightfont)
+}
+
+header {
+    color:rgb(238, 238, 238);
+    margin: 20px;
+    width: 30%;
+    padding: 20px;
+    text-align: right;
 }
 
