@@ -32,3 +32,4 @@
 -   [Materialize](https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css)
 -   [Weather API](http://api.openweathermap.org)
 -   [Font Awesome](https://kit.fontawesome.com/73f5b40986.js)
+-   [Wdisseny (Moon Phases)](http://www.wdisseny.com/lluna/?lang=en)
