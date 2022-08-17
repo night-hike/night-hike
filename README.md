@@ -18,8 +18,8 @@
 ![Map Start](./assets/images/map.png)
 ![Map Final]()
 
-![Git Pages]()
-![Repo Link]()
+![Git Pages](https://night-hike.github.io/night-hike/)
+![Repo Link](https://github.com/night-hike/night-hike)
 
 ## Team
 -  Spencer  - Frontend
