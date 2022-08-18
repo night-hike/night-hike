@@ -8,6 +8,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    
+    <link rel="stylesheet" href="./assets/css/moonphase.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
   </head>
@@ -15,11 +17,9 @@
   <nav>
     <div class="nav-wrapper">
       <a href="./homepage.html" class="brand-logo hide-on-med-and-down"><i class="material-icons">Night Hike</i><i class="fa-solid fa-bugs"></i></a>
-      <ul class="right">
-        
+        <ul class="right">
       </a>
-        </li>
-        <li><a href="./homepage.html"><i class="material-icons">Home</i></a></li>
+        <li><a href="./index.html"><i class="material-icons">Home</i></a></li>
         <li><a href="./map.html"><i class="material-icons">Maps</i></a></li>
         <li><a href="./constellations.html"><i class="material-icons">Constellations</i></a></li>
       </ul>
@@ -28,7 +28,7 @@
 
   <div class="container mainContainer">
     <div class="row">
-      <aside class="col s3"> <!--holds the weather and search for weather-->
+      <aside class="col s4"> <!--weather left 4 columns-->
         <ul>
           <i class="material-icons">
           <form>
@@ -42,16 +42,30 @@
             <button id="btnGetWeather" type="button">Search</button>
           </form>
           </i>
-        </ul>  
-        <div class="today"></div>
-        <div class="week"></div>
+        </ul>
+
+        <div class="today card-panel ">
+          City Name (today's date) <br />
+          Temp: <br />
+          <div class="uvindex">UV Index: <br /></div>
+        </div>
+
+        <div class="week row"> 
+         
+        </div> 
       </aside>
 
-      <div class="col s9"> <!--holds the map on the right side-->
+      <div class="middle"> <!--this is the center 4 columns-->
        
       </div>
+
+      <div class ="col s4" id="moonCalendar"> <!--far right 4 columns-->
+      </div>
+
     </div>
   </div>
+
+  
 
   <body>
     <script
@@ -59,5 +73,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="./assets/js/weather.js"></script>
+    <script src="./assets/js/moonphase.js"></script>
   </body>
 </html>

@@ -50,31 +50,31 @@ document.getElementById("btnGetWeather").addEventListener("click", function () {
     todaysWeather.innerHTML = `<div class="current-city">
     Current Weather in ${city}  <br />
     on ${todaysDate} <br>
-    <img src="http://openweathermap.org/img/wn/${resp.current.weather[0].icon}@4x.png"> <br>
+    <img src="http://openweathermap.org/img/wn/${resp.current.weather[0].icon}@2x.png"> <br>
     Temp: ${resp.current.temp} ℉<br />
-    Wind: ${resp.current.wind_speed} mph<br />
-    Humidity: ${resp.current.humidity}% <br />
     <div class="uvindex">UV Index: ${resp.current.uvi}<br /></div>`;
 
     var futureWeather = document.querySelector(".week");
     futureWeather.innerHTML = resp.daily
       .map((day, idx) => {
-        if (idx <= 7) {
+        if (idx <= 4) {
           console.log(day);
           var dt = new Date(day.dt * 1000);
-          return `<div>
-      <div>
-        <h5>${dt.toDateString()}</h5>
-        <img src="http://openweathermap.org/img/wn/${
-          day.weather[0].icon
+          return `
+        
+          <div class="card-panel futureWeek" style="width: 18rem"> 
+          <h5 class="card-title"></h5>
+            <p class="card-text"></p>
+              <h5>${dt.toDateString()}</h5>
+              <img src="http://openweathermap.org/img/wn/${
+              day.weather[0].icon
         }@2x.png"> <br>
         <p>
           Temp: ${day.temp.day} ℉<br />
-          Wind: ${day.wind_speed} mph<br />
-          Humidity: ${day.humidity}%<br />
         </p>
+        
       </div>
-    </div>`;
+    `;
         }
       })
       .join("");

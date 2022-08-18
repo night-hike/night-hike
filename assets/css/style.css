@@ -15,10 +15,11 @@ h1 {
     color: var(--lightfont)
 }
 
-<<<<<<< Updated upstream
+
 .today {
     color:  var(--lightfont);
     font-size:12px;
+    display: none;
 }
 
 .weatherSearch {
@@ -46,3 +47,24 @@ header {
     text-align: right;
 }
 
+.week {
+    margin-bottom:5px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.futureWeek {
+    display:flex;
+    flex:auto;
+}
+
+.card-panel {
+    background-color: transparent;
+    box-shadow: -5px 5px 10px #888888;
+}
+
+.middle {
+    height:500px;
+    width:800vh;
+    background-color:white;
+}
