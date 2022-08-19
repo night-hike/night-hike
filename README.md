@@ -18,7 +18,7 @@
 ![Map Start](./assets/images/map.png)
 ![Map Final]()
 
-![Git Pages](https://night-hike.github.io/night-hike/)
+![Git Pages](https://night-hike.github.io/night-hike/homepage.html)
 ![Repo Link](https://github.com/night-hike/night-hike)
 
 ## Team
