@@ -1,6 +1,7 @@
 #moonCalendar {
-    max-width: 700px;
-    margin: 20px auto;
+    width: auto;
+    height:auto;
+    margin: 20px 20px;
     background-color: #333333;
     padding: 1%;
     color: white;

@@ -15,14 +15,16 @@ h1 {
     color: var(--lightfont)
 }
 
-<<<<<<< Updated upstream
+
 .today {
     color:  var(--lightfont);
     font-size:12px;
+    display: none;
 }
 
 .weatherSearch {
     color: var(--lightfont);
+    transition-duration: 0.4s;
 }
 
 .current-city {
@@ -46,3 +48,60 @@ header {
     text-align: right;
 }
 
+.week {
+    margin-bottom:5px;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.futureWeek {
+    display:flex;
+    flex:auto;
+}
+
+.card-panel {
+    background-color: transparent;
+    box-shadow: -5px 5px 10px #888888;
+}
+
+
+.gif {
+    display: grid;
+    place-items: center;
+  }
+
+a {
+    display: grid;
+    place-items: center;
+    color:rgb(243, 235, 235);
+  }
+
+.material-icons:hover {
+    background-color:#655951;
+}
+
+#moonCalender {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid;
+}
+
+#btnGetWeather {
+    background-color:#593e47;
+    cursor: pointer;
+}
+
+#btnGetWeather:hover {
+    background-color: #655951;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin: 60px;
+    color: white;
+    display: underline;
+  }
