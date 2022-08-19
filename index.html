@@ -11,27 +11,24 @@
     
     <link rel="stylesheet" href="./assets/css/moonphase.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>Stargazer</title>
   </head>
 
   <nav>
     <div class="nav-wrapper">
-      <a href="./homepage.html" class="brand-logo hide-on-med-and-down"><i class="material-icons">Night Hike</i><i class="fa-solid fa-bugs"></i></a>
-        <ul class="right">
-      </a>
-        <li><a href="./index.html"><i class="material-icons">Home</i></a></li>
-        <li><a href="./map.html"><i class="material-icons">Maps</i></a></li>
-        <li><a href="./constellations.html"><i class="material-icons">Constellations</i></a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container mainContainer">
-    <div class="row">
-      <aside class="col s4"> <!--weather left 4 columns-->
-        <ul>
-          <i class="material-icons">
-          <form>
+      <a href="./homepage.html" class="brand-logo">
+        <i class="material-icons">Stargazer</i><i class="fa-light fa-moon-cloud"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li>
+        <i class="material-icons">
+        </i></a>
+        </li>
+        <li>
+          <a href="./homepage.html"><i class="material-icons">Homepage</i></a>
+          <li>
+             <a href="./index.html"><i class="material-icons">Lets Explore</i></a>
+           </li>
+           <form>
             <input
               class="weatherSearch"
               id="city"
@@ -41,6 +38,25 @@
             />
             <button id="btnGetWeather" type="button">Search</button>
           </form>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container mainContainer">
+    <div class="row">
+      <aside class="col s4"> <!--weather left 4 columns-->
+        <ul>
+          <i class="material-icons">
+          <form>
+            <!-- <input
+              class="weatherSearch"
+              id="city"
+              type="text"
+              placeholder="Search for a city..."
+              aria-label="Search"
+            />
+            <button id="btnGetWeather" type="button">Search</button>
+          </form> -->
           </i>
         </ul>
 
