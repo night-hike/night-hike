@@ -26,8 +26,8 @@
 ![Moonphases Start](./assets/images/moonphases.png)
 ![Moonphases Final](./assets/images/finalexplore.png)
 
-![Git Pages](https://night-hike.github.io/night-hike/)
-![Repo Link](https://github.com/night-hike/night-hike)
+[Git Pages](https://night-hike.github.io/night-hike/)
+[Repo Link](https://github.com/night-hike/night-hike)
 
 ## Team
 -  Spencer  - Frontend
