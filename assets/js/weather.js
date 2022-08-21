@@ -1,5 +1,5 @@
 var apiKey = "10af18ddf341c9aa44e1a4e1ec8e5d31";
-
+var weatherIcon = "";
 // code begins once city is inputted and search button is clicked
 document.getElementById("btnGetWeather").addEventListener("click", function () {
   var city = document.querySelector("input").value;
@@ -59,20 +59,28 @@ document.getElementById("btnGetWeather").addEventListener("click", function () {
       .map((day, idx) => {
         if (idx <= 4) {
           console.log(day);
+          weatherIcon = day.weather[0].icon;
+          console.log(weatherIcon);
+          if (weatherIcon == "01d" || weatherIcon == "01n") {
+            console.log("if statement");
+            starsrc = "./assets/images/cartoonstar0.png";
+          } else {
+            console.log("else statement");
+            starsrc = "./assets/images/cartoonstar01.png";
+          }
           var dt = new Date(day.dt * 1000);
           return `
         
-          <div class="card-panel futureWeek" style="width: 18rem"> 
+          <div class="card-panel futureWeek" style="width: 100rem"> 
           <h5 class="card-title"></h5>
             <p class="card-text"></p>
               <h5>${dt.toDateString()}</h5>
-              <img src="http://openweathermap.org/img/wn/${
-              day.weather[0].icon
-        }@2x.png"> <br>
+              <img src="http://openweathermap.org/img/wn/${weatherIcon}@2x.png"> 
+              <br>
         <p>
           Temp: ${day.temp.day} ℉<br />
         </p>
-        
+        <img id="star${idx}" class="star" src="${starsrc}" height="150px" width="150px">
       </div>
     `;
         }

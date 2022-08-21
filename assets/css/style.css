@@ -1,89 +1,101 @@
 :root {
-     --lightfont:rgb(238, 238, 238); 
+  --lightfont: rgb(238, 238, 238);
 }
 
 nav {
-    background-color: #11153a; 
+  background-color: #11153a;
 }
 
 body {
-    height: 100vh;
-    background: linear-gradient(to bottom, #1c0f4c, #18174d, #161d4e, #16224d, #18274c, #2e2a4b, #3d2f4a, #483449, #593e47, #614b48, #655951, #69665f);;
+  height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    #1c0f4c,
+    #18174d,
+    #161d4e,
+    #16224d,
+    #18274c,
+    #2e2a4b,
+    #3d2f4a,
+    #483449,
+    #593e47,
+    #614b48,
+    #655951,
+    #69665f
+  );
 }
 
 h1 {
-    color: var(--lightfont)
+  color: var(--lightfont);
 }
 
-
 .today {
-    color:  var(--lightfont);
-    font-size:12px;
-    display: none;
+  color: var(--lightfont);
+  font-size: 12px;
+  display: none;
 }
 
 .weatherSearch {
-    color: var(--lightfont);
+  color: var(--lightfont);
 }
 
 .current-city {
-    color: var(--lightfont);
-    font-size:12px;
+  color: var(--lightfont);
+  font-size: 12px;
 }
 
 .row {
-    margin: 10px;
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-    color: var(--lightfont)
+  margin: 10px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  color: var(--lightfont);
 }
 
 header {
-    color:rgb(238, 238, 238);
-    margin: 20px;
-    width: 30%;
-    padding: 20px;
-    text-align: right;
+  color: rgb(238, 238, 238);
+  margin: 20px;
+  width: 30%;
+  padding: 20px;
+  text-align: right;
 }
 
 .week {
-    margin-bottom:5px;
-    display:flex;
-    flex-wrap: wrap;
+  margin-bottom: 5px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .futureWeek {
-    display:flex;
-    flex:auto;
+  display: flex;
+  flex: auto;
 }
 
 .card-panel {
-    background-color: transparent;
-    box-shadow: -5px 5px 10px #888888;
+  background-color: transparent;
+  box-shadow: -5px 5px 10px #888888;
 }
 
-
 .gif {
-    display: grid;
-    place-items: center;
-  }
+  display: grid;
+  place-items: center;
+}
 
 a {
-    display: grid;
-    place-items: center;
-    color:rgb(243, 235, 235);
-  }
+  display: grid;
+  place-items: center;
+  color: rgb(243, 235, 235);
+}
 
 .material-icons:hover {
-    background-color:#655951;
+  background-color: #655951;
 }
 
 #moonCalender {
-    position: fixed;
-    top: 80px;
-    right: 0;
-    width: 200px;
-    height: 100px;
-    border: 3px solid;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid;
 }
