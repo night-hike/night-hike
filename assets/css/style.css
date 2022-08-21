@@ -8,6 +8,11 @@ nav {
 
 body {
   height: 100vh;
+  background-image: url(../images/starsbackground.gif);
+}
+
+.explore {
+  height: 150vh;
   background: linear-gradient(
     to bottom,
     #1c0f4c,
