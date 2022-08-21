@@ -1,100 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
+   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" href="./assets/images/moon-favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/css/moonphase.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Stargazer</title>
-  </head>
-
-  <nav>
-    <div class="nav-wrapper">
-      <a href="./homepage.html" class="brand-logo">
-        <i class="material-icons">Stargazer</i><i class="fa-solid fa-cloud-moon"></i></a>
-      <ul class="right hide-on-med-and-down">
-        <li>
-        <i class="material-icons">
-        </i></a>
-        </li>
-        <li>
-          <a href="./homepage.html"><i class="material-icons">Homepage</i></a>
-          <li>
-             <a href="./index.html"><i class="material-icons">Lets Explore</i></a>
-           </li>
-           <form>
-            <input
-              class="weatherSearch" width="15px"
-              id="city"
-              type="text"
-              placeholder="Search for a city..."
-              aria-label="Search"
-            />
-            <button id="btnGetWeather" type="button">Search</button>
-          </form>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <div class="container mainContainer">
-    <div class="row">
-      <aside class="col s4"> <!--weather left 4 columns-->
-        <ul>
-          <i class="material-icons">
-          <form>
-            <!-- <input
-              class="weatherSearch"
-              id="city"
-              type="text"
-              placeholder="Search for a city..."
-              aria-label="Search"
-            />
-            <button id="btnGetWeather" type="button">Search</button>
-          </form> -->
-          </i>
-        </ul>
-
-        <div class="today card-panel ">
-          City Name (today's date) <br />
-          Temp: <br />
-          <div class="uvindex">UV Index: <br /></div>
-        </div>
-
-        <div class="week row"> 
-         
-        </div> 
-      </aside>
-
-      <div class="middle"> <!--this is the center 4 columns-->
-       
-      </div>
-
-      <div class ="col s4" id="moonCalendar"> <!--far right 4 columns-->
-      </div>
-
-    </div>
-  </div>
-
-  
+   </head>
 
   <body>
-    <script
-      src="https://kit.fontawesome.com/73f5b40986.js"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./assets/js/weather.js"></script>
-    <script src="./assets/js/moonphase.js"></script>
+   <nav>
+      <div class="nav-wrapper">
+        <a href="./homepage.html" class="brand-logo">
+          <i class="material-icons">Stargazer</i><i class="fa-solid fa-cloud-moon"></i></a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+          <i class="material-icons">
+          </i></a>
+          </li>
+          <li>
+            <a href="./index.html"><i class="material-icons">Homepage</i></a>
+            <li>
+               <a href="./explore.html"><i class="material-icons">Lets Explore</i></a>
+             </li>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+      <header class="container center">
+         <h1 class="center">Let the sky guide you!</h1>
+      </header>
+      <div class="gif">
+        <img src="./assets/images/moon-phases.en.gif" height="228.5" width="375">
+      </div>
+      <div class="text">
+        <a>Stargazer help's you find the best time to observe the night sky!</a>
+      </div>
+      <script src="https://kit.fontawesome.com/73f5b40986.js" crossorigin="anonymous"></script>
+
+    <footer>
+        <a class="names">
+          &copy;	Stargazer is owned by Alyssa, Brooke, Hunter and Spencer 
+        </a>
+    </footer>
   </body>
 </html>
-
-<footer>
-  <a class="names">
-    &copy;	Stargazer is owned by Alyssa, Brooke, Hunter and Spencer 
-  </a>
-</footer>
