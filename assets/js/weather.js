@@ -75,12 +75,12 @@ document.getElementById("btnGetWeather").addEventListener("click", function () {
           <h5 class="card-title"></h5>
             <p class="card-text"></p>
               <h5>${dt.toDateString()}</h5>
-              <img src="http://openweathermap.org/img/wn/${weatherIcon}@2x.png"> 
+              <img src="http://openweathermap.org/img/wn/${weatherIcon}@2x.png" alt="weather type icon"> 
               <br>
         <p>
           Temp: ${day.temp.day} ℉<br />
         </p>
-        <img id="star${idx}" class="star" src="${starsrc}" height="150px" width="150px">
+        <img id="star${idx}" class="star" src="${starsrc}" height="150px" width="150px" alt="star moon-indicator">
       </div>
     `;
         }
