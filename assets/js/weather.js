@@ -50,7 +50,7 @@ document.getElementById("btnGetWeather").addEventListener("click", function () {
     todaysWeather.innerHTML = `<div class="current-city">
     Current Weather in ${city}  <br />
     on ${todaysDate} <br>
-    <img src="http://openweathermap.org/img/wn/${resp.current.weather[0].icon}@2x.png"> <br>
+    <img src="https://openweathermap.org/img/wn/${resp.current.weather[0].icon}@2x.png"> <br>
     Temp: ${resp.current.temp} ℉<br />
     <div class="uvindex">UV Index: ${resp.current.uvi}<br /></div>`;
 
@@ -75,7 +75,7 @@ document.getElementById("btnGetWeather").addEventListener("click", function () {
           <h5 class="card-title"></h5>
             <p class="card-text"></p>
               <h5>${dt.toDateString()}</h5>
-              <img src="http://openweathermap.org/img/wn/${weatherIcon}@2x.png" alt="weather type icon"> 
+              <img src="https://openweathermap.org/img/wn/${weatherIcon}@2x.png" alt="weather type icon"> 
               <br>
         <p>
           Temp: ${day.temp.day} ℉<br />
