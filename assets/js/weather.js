@@ -6,7 +6,7 @@ document.getElementById("btnGetWeather").addEventListener("click", function () {
   console.log(city);
 
   //obtaining latitude and longitude coordinates from inputted city name via api
-  var apiURLCoordinates = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`;
+  var apiURLCoordinates = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&appid=${apiKey}`;
   fetch(apiURLCoordinates)
     .then((resp) => {
       if (!resp.ok) {
